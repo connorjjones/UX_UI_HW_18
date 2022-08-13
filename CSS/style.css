@@ -120,7 +120,7 @@ ul{
 }
 .evergreenImg{
     grid-area: evergreenImg;
-    background-image: url(/Images/EverGreen_1.jpg);
+    background-image: url(../Images/EverGreen_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
