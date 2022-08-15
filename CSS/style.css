@@ -132,6 +132,12 @@ ul{
     grid-area: evergreenContent;
     padding: 20px;
 }
+button{
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+    background-color: #665E40;
+}
 footer{
     background-color: #665E40;
 }
@@ -147,4 +153,46 @@ footer{
     margin: 0 auto;
     /* outline: 1px solid red; */
     justify-content: center;
+}
+@media only screen and (max-width: 600px){
+    .hero{
+        height: 800px;
+    }
+    .heroImg{
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        margin-bottom: 200px;
+        padding: 0;
+    }
+    .content{
+        background-color: white;
+        padding: 10px;
+        width: 80%;
+        position: relative;
+        left: 8%;
+        top: 70%;
+        justify-content: center;
+    }
+    .flexContainer{
+        flex-direction: column;
+    }
+    .flexChild{
+        width: 100%;
+    }
+    .workGrid{
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr 400px 1fr 400px 1fr;
+        grid-template-areas: 
+            "cwwcImg"
+            "cwwcContent"
+            "doeImg"
+            "doeContent"
+            "evergreenImg"
+            "evergreenContent"
+            ;
+    }
 }
